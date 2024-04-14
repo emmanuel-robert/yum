@@ -1,0 +1,21 @@
+.root {
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--border-default);
+  position: static;
+  cursor: inherit;
+  &:hover {
+    box-shadow: 0 3px 16px -4px rgba(51, 40, 36, 0.25);
+  }
+}
+.image {
+  width: 100%;
+  aspect-ratio: 3/2;
+  object-fit: cover;
+}
+.content {
+  padding-top: var(--space-16);
+  padding: var(--space-16);
+  font-size: var(--text-large-font-size);
+  line-height: var(--text-large-font-size);
+}

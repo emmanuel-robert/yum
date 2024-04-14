@@ -4,6 +4,7 @@ import { BusinessTypeFilterBar } from '../business-type-filter-bar/business-type
 import { Footer } from '../footer/footer';
 import classNames from 'classnames';
 import styles from './discover-page.module.scss';
+import { TopDeals } from '../top-deals/top-deals';
 
 export interface DiscoverPageProps {
     className?: string;
@@ -15,6 +16,7 @@ export const DiscoverPage = ({ className, foodCategories }: DiscoverPageProps) =
         <div className={classNames(styles.root, className)}>
             <Header userAuthenticated={true} />
             <BusinessTypeFilterBar />
+            <TopDeals />
             <Footer />
         </div>
     );
